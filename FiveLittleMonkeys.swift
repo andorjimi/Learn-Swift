@@ -7,14 +7,23 @@ for monkey in 1...5 {
     var monkeyGen:String = ""
     monkeyGen = gender == 0 ? "his" : "her"
 
-    print("""
-    \(numMonkeys) jumping on the bed.
-    One fell of and bumped \(monkeyGen) head.
+    if numMonkeys == 1 {
+        print("""
+        \(numMonkeys) little monkey jumping on the bed.
+        One fell of and bumped \(monkeyGen) head.
+        
+        Mummy called the doctor and the doctor said.
+        "No, more monkeys jumping on the bed.\n
+        """) 
+    } else {
+        print("""
+        \(numMonkeys) little monkeys jumping on the bed.
+        One fell of and bumped \(monkeyGen) head.
 
-    Mummy called the doctor and the doctor said.
-    "No, more monkeys jumping on the bed.
-    \n
-    """)
+        Mummy called the doctor and the doctor said.
+        "No, more monkeys jumping on the bed. \n
+        """)
+    }
     numMonkeys -= 1
 }
 
@@ -23,6 +32,5 @@ No monkeys jumping on the bed.
 none fell down and bumped their head.
 
 Mummy said.
-"Now, those monkeys have all gone to bed.
-\n
+"Now, those monkeys have all gone to bed.\n
 """)
