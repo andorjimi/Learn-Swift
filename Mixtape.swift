@@ -31,11 +31,11 @@ mixtape.insert("The Elephant Song - Eric Herman", at:9)
 
 print("\nSide A:\n")
 for (index, track) in mixtape[0...4].enumerated() {
-    print((index + 1), track)
+    print("\(index + 1). \(track)")
 }
 
 print("\nSide B:\n")
 for (index, track) in mixtape[5...].enumerated() {
-    print((index + 1), track)
+    print("\(index + 1). \(track)")
 }
 
